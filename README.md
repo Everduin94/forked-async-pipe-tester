@@ -11,6 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Run in production mode so that you do not see duplicate output on each change-detection cycle.
 - app.component.html contains each component. The application is significantly easier to follow
 if you comment out the other components and look at them one at a time.
+- some of the logging is relevant/not-relevant based on the component you're testing. Thus, some of the log statements are commented out.
 
 ## Article
 - 
