@@ -1,0 +1,11 @@
+<ng-container *ngIf="observable$ | async as data">
+  <div>
+    <h3>Page Number: {{data}}</h3>
+  </div>
+  <div>
+    The page is currently displaying: {{data}}
+  </div>
+  <div>
+    {{data}}
+  </div>
+</ng-container>

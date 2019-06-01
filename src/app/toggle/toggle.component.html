@@ -1,0 +1,8 @@
+<button type="button" (click)="toggler.next(!toggler.value)">
+  Toggle Data
+</button>
+<ng-container *ngIf="toggler.value">
+    <div *ngFor="let data of observable$ | async">
+        {{data | json}}
+    </div>
+</ng-container>

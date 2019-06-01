@@ -1,0 +1,13 @@
+:host {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 40px;
+    font-size: 24px;
+}
+
+hr {
+    margin: 10px;
+}

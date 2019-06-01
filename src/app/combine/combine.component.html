@@ -1,0 +1,12 @@
+<ng-container *ngIf="allData$ | async as allData">
+  <h3>{{allData.header}}</h3>
+  <div>
+    {{allData.content}}
+  </div>
+  <div>
+    {{allData.pageCount}}
+  </div>
+</ng-container>
+<button type="button" (click)="subj1.next(subj1.value + 1)">Increment Header</button>
+<button type="button" (click)="subj2.next(subj2.value + 1)">Increment Content</button>
+<button type="button" (click)="subj3.next(subj3.value + 1)">Increment PageCount</button>

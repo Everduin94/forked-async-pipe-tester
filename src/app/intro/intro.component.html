@@ -1,0 +1,23 @@
+<hr>
+<button #toggleBtn type="button" (click)="toggleAsyncElement()">Toggle Async Pipe Element</button>
+
+<div *ngIf="toggleElement; else waitingOnElement">
+  <div class="content" #asyncElement *ngIf="observable$ | async as data; else waitingOnEmission">
+    {{data}}
+  </div>
+  <ng-template #waitingOnEmission>
+    <div class="content">
+        🔃 Waiting for first emission
+    </div>
+  </ng-template>
+  
+</div>
+<ng-template #waitingOnElement>
+  <div class="content">
+    ⚠ asyncElement has not been created
+  </div>
+</ng-template>
+<button #completeBtn style="margin-right: 5px;" type="button">Complete Observable</button> <!-- Click listener in .ts -->
+<button #reassignBtn type="button" (click)="reassignObservable()">Reassign Observable</button>
+<hr>
+
