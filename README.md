@@ -16,12 +16,12 @@ if you comment out the other components and look at them one at a time.
 - 
 
 ## Code
-src/app/intro: Looks at creation (component and container), destruction, completion, and reassignment when using async pipe.
+*src/app/intro*: Looks at creation (component and container), destruction, completion, and reassignment when using async pipe.
 
-combine: leverages combineLatest and a single async pipe
+*src/app/combine*: leverages combineLatest and a single async pipe
 
-dirty: uses multiple async pipes for one observable
+*src/app/dirty*: uses multiple async pipes for one observable
 
-clean: uses a single async pipe for one observable
+*src/app/clean*: uses a single async pipe for one observable
 
-toggle: creation / destruction of a container
+*src/app/toggle*: creation / destruction of a container
