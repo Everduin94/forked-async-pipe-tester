@@ -14,7 +14,7 @@ if you comment out the other components and look at them one at a time.
 - some of the logging is relevant/not-relevant based on the component you're testing. Thus, some of the log statements are commented out.
 
 ## Article
-- 
+- https://medium.com/@erxk_verduin/angular-rxjs-async-pipe-deep-dive-2510b56f793a
 
 ## Code
 *src/app/intro*: Looks at creation (component and container), destruction, completion, and reassignment when using async pipe.
